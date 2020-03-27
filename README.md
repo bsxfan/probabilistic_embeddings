@@ -11,7 +11,7 @@ The tools here will not allow you to fully replicate the experiments descibed in
 
 - A reference implementation of the Chinese restaurant process prior on partition (clustering) hypotheses.
 
-## What is a probabilistic embedding
+## What is a probabilistic embedding?
 A traditional embedding is a vector in R<sup>n</sup>, with n fixed, extracted from some complex input (for us a speech segment of variable duration). Such embeddings are much easier to model and process than the original inputs.
 
 The general desiderata for embeddings used in classification, clustering, verification, or any other recognition of discrete classes is that they should be: 
