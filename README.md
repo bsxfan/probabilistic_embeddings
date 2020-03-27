@@ -19,7 +19,7 @@ The general desiderata for embeddings used in classification, clustering, verifi
 - and close when they are from the same class.  
 
 This ideal situation breaks down however when inputs might be of poor and/or variable quality. No matter how good the embedding extractor, it will not be able to procude neatly separated clusters of embeddings, where the clusters correspond to the true classes.
-In such cases, the embedding extractor form a bottleneck that discards some important information about the quality of the input. 
+In such cases, the embedding extractor forms a bottleneck that discards some important information about the quality of the input. 
 
 In probabilistic embeddings, we augment each embedding with a vector of _precisions_ (also in R<sup>n</sup>), which is extrated jointly with the embedding by a modified embedding extractor. The idea is that precisions are high for those components of the embedding that could be reliably extracted and low (or zero) for those components that cannot be reliably extracted.
 
