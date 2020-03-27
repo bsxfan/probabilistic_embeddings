@@ -17,6 +17,7 @@ A traditional embedding is a vector in R<sup>n</sup>, with n fixed, extracted fr
 The general desiderata for embeddings used in classification, clustering, verification, or any other recognition of discrete classes is that they should be: 
 - Far apart (for example in Euclidean distance) when the are extacted from examples of different classes, 
 - and close when they are from the same class.  
+
 This ideal situation breaks down however when inputs might be of poor and/or variable quality. No matter how good the embedding extractor, it will not be able to procude neatly separated clusters of embeddings, where the clusters correspond to the true classes.
 In such cases, the embedding extractor form a bottleneck that discards some important information about the quality of the input. 
 
