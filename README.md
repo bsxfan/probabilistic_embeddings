@@ -1,7 +1,7 @@
 # Probabilistic Embeddings
-This repository will contain Python code associated with our paper:
+This repository will contain Python code associated with our [paper](http://arxiv.org/abs/2004.04096paper):
 
-Anna Silnova, Niko Brummer, Johan Rohdin, Themos Stafylakis and Lukas Burget, "Probabilistic embeddings for speaker diarization", The Speaker and Language Recognition Workshop, Tokio, 2020.
+Anna Silnova, Niko Brummer, Johan Rohdin, Themos Stafylakis and Lukas Burget, "Probabilistic embeddings for speaker diarization", Odyssey 2020: The Speaker and Language Recognition Workshop, Tokio. 
 
 The tools here will not allow you to fully replicate the experiments descibed in the paper. Specifically, we do not include the probabilistic x-vector extractor. We do include:
 
