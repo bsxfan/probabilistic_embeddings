@@ -3,7 +3,7 @@ This repository will contain Python code associated with our [paper](http://arxi
 
 Anna Silnova, Niko Brummer, Johan Rohdin, Themos Stafylakis and Lukas Burget, "Probabilistic embeddings for speaker diarization", Odyssey 2020: The Speaker and Language Recognition Workshop, Tokio. 
 
-The tools here will not allow you to fully replicate the experiments descibed in the paper. Specifically, we do not include the probabilistic x-vector extractor. We do include:
+The tools here will not allow you to fully replicate the experiments described in the paper. Specifically, we do not include the probabilistic x-vector extractor. We do include:
 
 - A reference implementation of our discriminative traning criterion. It can be used to train the extractor and the PLDA backend, or just the backend. The criterion is a special case of multiclass cross-entropy, where the classes are all 4140 ways to partition a set of 8 elements.
 
