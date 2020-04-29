@@ -1,7 +1,6 @@
 """
 Package lib 
 
-Includes all Niko's Python Tools written for Omilia
-
+Contains various subpackages, with a variety of tools.
 
 """
