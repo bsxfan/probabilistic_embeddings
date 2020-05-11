@@ -21,7 +21,7 @@ class model:
         self.d = len(w)
         
         
-    def logLH(self,S,X,B):
+    def logLH(self,S,X,B=None):
         """
         Computes log-likelihoods: log P(observations| cluster) + const,
         for a number of given clusters. The observations are represented by 
@@ -38,6 +38,8 @@ class model:
         
         B: (n,d) matrix. Contains embedding estimate precisions;
            n of them, of dimension d.
+           Optional: if B is None, or not given it is assumed to be infinite.
+           
         
         
         example: When n = 2 and S = np.array([[1,1], [1,0], [0,1]]), then
@@ -55,8 +57,12 @@ class model:
         
         """
         w = self.w
-        wB = w*B
-        R = wB / (w+B)
+        if B is None:
+            n,d = X.shape
+            R = np.tile(w,(n,1))
+        else: 
+            wB = w*B
+            R = wB / (w+B)
         RX = R*X         #(n,d)
         
         SRX = S @ RX     #(m,d)

@@ -30,6 +30,6 @@ B = np.full((n,dim),b0)
 
         
         
-ahc = AHC(X,B,w,crp)
+ahc = AHC(w,crp,X,B)
 ll = ahc.cluster()
 print('ahc result: ',ll)

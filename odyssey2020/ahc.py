@@ -7,12 +7,15 @@ class SingletonDict(dict):
 
 
 class AHC:
-    def __init__(self, X, B, w, prior):
+    def __init__(self, w, prior, X, B = None):
         assert X.shape == B.shape
         n,d = X.shape
         
         self.n = self.N = n
-        self.R = R = (w*B) / (w+B)
+        if B is None:
+            self.R = R = np.tile(w,(n,1))
+        else:
+            self.R = R = (w*B) / (w+B)
         self.RX = RX = R*X         #(n,d)
         
         self.LLH = (RX**2/(1.0+R) - np.log1p(R) ).sum(axis=1) / 2.0  #(n,)
